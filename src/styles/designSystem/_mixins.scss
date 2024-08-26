@@ -1,0 +1,273 @@
+@import "./sizes";
+
+
+@mixin align_center {
+    display: flex;
+    align-items: center;
+}
+
+
+
+@mixin align_center_stretch {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin content_layout {
+    width: 100%;
+    max-width: 1140px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+
+@mixin align_center_row {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+@mixin align_center_column {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+// @mixin for-small-phone-only {
+//     @media (max-width: $smallPhone) {
+//         @content;
+//     }
+// }
+
+// @mixin for-medium-phone-only {
+//     @media (max-width: $mediumPhone) {
+//         @content;
+//     }
+// }
+
+
+
+// @mixin for-large-phone-only {
+//     @media (max-width: $largePhone) {
+//         @content;
+//     }
+// }
+
+// @mixin for-tablet-portrait-up {
+//     @media (min-width: $largeTabletPotrait) {
+//         @content;
+//     }
+// }
+
+// @mixin for-tablet-portrait-down {
+//     @media (max-width: $largeTabletPotrait) {
+//         @content;
+//     }
+// }
+
+// @mixin for-tablet-landscape-up {
+//     @media (min-width: $largeTabletLandscape) {
+//         @content;
+//     }
+// }
+
+// @mixin for-extralarge-tablet-landscape-up {
+//     @media (max-width: $extraLargeTabletLandscape) {
+//         @content;
+//     }
+// }
+
+// @mixin for-desktop-up {
+//     @media (min-width: $desktopUp) {
+//         @content;
+//     }
+// }
+
+// @mixin for-big-desktop-up {
+//     @media (min-width: $bigDesktopUp) {
+//         @content;
+//     }
+// }
+
+// @mixin for-tab {
+//     @media (min-width: $tab) {
+//         @content;
+//     }
+// }
+
+// @mixin for-small-tab {
+//     @media (max-width: $tab) {
+//         @content;
+//     }
+// }
+
+// @mixin for-small {
+//     @media (min-width: $small) {
+//         @content;
+//     }
+// }
+
+// @mixin for-small- {
+//     @media (min-width: $small) {
+//         @content;
+//     }
+// }
+
+// @mixin for-medium {
+//     @media (max-width: $medium) {
+//         @content;
+//     }
+// }
+
+// @mixin for-large {
+//     @media (min-width: $large) {
+//         @content;
+//     }
+// }
+
+// @mixin for-small-laptop{
+//     @media (max-width: $smallLaptop) {
+//         @content;
+//     }
+// }
+
+// @mixin row-center {
+//     display: flex;
+//     flex-direction: row !important;
+//     justify-content: center;
+//     align-items: center;
+
+// }
+
+// @mixin container {
+//     display: flex;
+//     width: 100%;
+//     flex-direction: column;
+//     position: relative;
+
+//     @media screen and (max-height: 700px) {
+//         min-height: 45rem;
+//     }
+// }
+
+
+// @mixin placeholder {
+//     &::-webkit-input-placeholder {@content}
+//     &:-moz-placeholder           {@content}
+//     &::-moz-placeholder          {@content}
+//     &:-ms-input-placeholder      {@content}   
+//   }
+
+
+// @mixin row {
+//     display: flex;
+//     flex-direction: row !important;
+// }
+
+// @mixin column {
+//     display: flex;
+//     flex-direction: column !important;
+// }
+
+// @mixin align-center {
+//     align-items: center !important;
+// }
+
+// @mixin align-start {
+//     align-items: flex-start !important;
+// }
+
+// @mixin align-end {
+//     align-items: flex-end !important;
+// }
+
+// @mixin justify-center {
+//     justify-content: center;
+// }
+
+// @mixin justify-space-between {
+//     justify-content: space-between;
+// }
+
+// //border
+// @mixin borderTop {
+//     border-top: 1px solid $Seperator;
+// }
+
+// @mixin borderBottom {
+//     border-bottom: 1px solid $Seperator;
+// }
+// //paddings
+// @mixin p-10 {
+//     padding: 10px;
+// }
+
+// @mixin ph-20 {
+//     padding: 0 1.25rem;
+// }
+
+// @mixin mt-145 {
+//     margin-top: 7.5rem;
+// }
+
+// @mixin mt-60 {
+//     margin-top: 60px;
+// }
+
+// @mixin mt-90 {
+//     margin-top: 90px;
+// }
+// @mixin mt-4 {
+//     margin-top: 4px;
+// }
+
+// @mixin mb-4 {
+//     margin-bottom: 4px;
+// }
+
+// @mixin mb-16 {
+//     margin-bottom: 16px;
+// }
+
+// @mixin mb-40 {
+//     margin-bottom: 40px;
+// }
+
+// @mixin mb-56 {
+//     margin-bottom: 56px;
+// }
+
+// @mixin mr-12 {
+//     margin-right: 12px;
+// }
+
+
+// @mixin ph-16 {
+//     padding-left: 1rem;
+//     padding-right: 1rem;
+// }
+
+// @mixin ph-40 {
+//     padding: 0 2.5rem;
+// }
+
+
+// @mixin content_center {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+
+
+// @mixin default_input {
+//     background-color: $buttonDefault;
+//     border-radius: 12px;
+//     border: 1px solid $buttonBorder;
+// }
+
+// @mixin cursor_pointer{
+//     cursor: pointer;
+// }

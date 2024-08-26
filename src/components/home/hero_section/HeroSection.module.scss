@@ -1,0 +1,59 @@
+@import "../../../styles/common.scss";
+
+.container {
+  display: flex;
+  background: $blueBg;
+  min-height: 40rem;
+
+  .inner_container {
+    @include content_layout;
+    @include align_center_row;
+
+    @media screen and (max-width: $medium) {
+      @include align_center_column;
+    }
+
+    .left_section {
+      display: flex;
+      flex: 1;
+      overflow: hidden;
+      flex-direction: column;
+
+      @media screen and (max-width: $medium) {
+        padding: 10% 1rem;
+      }
+
+      h1 { 
+        @include largeHeader;
+        color: $primaryBlack;
+        margin-bottom: 20px;
+      }
+
+      p {
+        @include subtitleRegular;
+        letter-spacing: 2px;
+        line-height: 24px;
+        color: $primaryBlack;
+      }
+    }
+    .right_section {
+      display: flex;
+      flex: 1;
+      overflow: hidden;
+      padding: 5% 0  5% 5%;
+      .image_wrapper {
+        position: relative;
+        width: 100%;
+        height: 30rem;
+        img {
+          border-radius: 8px;
+        }
+      }
+
+      @media screen and (max-width: $medium) {
+        padding: 5% 0;
+        width: calc(100vw - 2rem);
+      }
+    }
+  }
+}

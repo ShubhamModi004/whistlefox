@@ -1,0 +1,36 @@
+@import "../../styles/common.scss";
+
+
+.container {
+  padding: 8px 16px;
+  align-items: center;
+  background-color: $white;
+  .inner_container {
+    @include align_center_stretch;
+    @include content_layout;
+    .logo_section {
+      display: flex;
+      align-items: center;
+      margin-top: 8px;
+      
+      p {
+        margin-left: 0.5rem;
+        color: $primaryBlack;
+        @include subtitleSemibold;
+      }
+    }
+  
+    .nav_section {
+      @include align_center;
+  
+      a  {
+        @include subtitleRegular;
+        color: $primaryBlack;
+        margin: 0 12px;
+      }
+    }
+  }
+
+  
+
+}

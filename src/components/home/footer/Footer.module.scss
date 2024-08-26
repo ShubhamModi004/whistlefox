@@ -1,0 +1,43 @@
+@import "../../../styles/common.scss";
+
+.container {
+  display: flex;
+  background: $blueBg;
+
+  .inner_container {
+    @include content_layout;
+    @include align_center_column;
+    padding: 5% 0;
+
+    .left_section {
+      display: flex;
+      flex: 1;
+      overflow: hidden;
+      flex-direction: column;
+      text-align: center;
+
+      @media screen and (max-width: $medium) {
+        padding: 10% 1rem;
+      }
+
+      h2 {
+        @include header;
+        color: $primaryBlack;
+        margin-bottom: 1.5rem;
+      }
+
+      p {
+        @include subtitleRegular;
+        letter-spacing: 2px;
+        line-height: 24px;
+        color: $primaryBlack;
+      }
+    }
+    .social_icon {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      margin-top: 2rem;
+    }
+  }
+}

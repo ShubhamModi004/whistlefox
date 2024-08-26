@@ -1,0 +1,189 @@
+// Font variables
+$font-weight-black: 800;
+$font-weight-bold: 700;
+$font-weight-semi-bold: 600;
+$font-weight-medium: 500;
+$font-weight-regular: 400;
+$font-weight-light: 300;
+
+
+// Mixin for text styles
+@mixin text-style($size, $weight) {
+  font-size: $size;
+  font-weight: $weight;
+  margin-bottom: 0;
+}
+
+
+// large header
+@mixin largeHeader {
+  @include text-style(48px, $font-weight-bold)
+}
+
+@mixin header {
+  @include text-style(42px, $font-weight-bold)
+}
+
+
+@mixin subheader { 
+  @include text-style(24px, $font-weight-bold);
+  line-height: 140%;
+}
+
+@mixin hint { 
+  @include text-style(15px, $font-weight-light);
+}
+
+// subtitles
+
+@mixin subtitleRegular {
+  @include text-style(18px, $font-weight-regular);
+}
+
+@mixin subtitleSemibold {
+  @include text-style(18px, $font-weight-semi-bold);
+}
+
+
+
+
+// @mixin title {
+//   @include text-style(20px, $font-weight-bold);
+// }
+
+// @mixin subtitle-large {
+//   @include text-style(24px, $font-weight-semi-bold);
+// }
+
+// @mixin subtitle-medium {
+//   @include text-style(22px, $font-weight-semi-bold);
+// }
+
+// @mixin subtitle-small {
+//   @include text-style(16px, $font-weight-semi-bold);
+// }
+
+// @mixin subtitle-extra-small {
+//   @include text-style(14px, $font-weight-semi-bold);
+// }
+
+// // Additional text styles
+// @mixin heading-large {
+//   @include text-style(32px, $font-weight-bold);
+// }
+
+// @mixin heading-large-logo {
+//   @include text-style(32px, $font-weight-medium);
+// }
+
+// @mixin heading-medium {
+//   @include text-style(22px, $font-weight-bold);
+// }
+
+// @mixin heading-small {
+//   @include text-style(17px, $font-weight-bold);
+// }
+
+
+// @mixin heading-extra-small {
+//   @include text-style(16px, $font-weight-bold);
+// }
+
+// @mixin heading-extra-x-small {
+//   @include text-style(12px, $font-weight-bold);
+// }
+// // captions
+// @mixin caption2 {
+//   font-family: $font-family-default2;
+//   @include text-style(13px, $font-weight-medium);
+// }
+
+// @mixin phone {
+//   font-family: $font-family-default2;
+//   @include text-style(18px, $font-weight-medium);
+// }
+
+
+
+// // Additional text styles
+// @mixin sub-heading-large {
+//   @include text-style(24px, $font-weight-medium);
+// }
+
+// @mixin sub-heading-medium {
+//   @include text-style(20px, $font-weight-medium);
+// }
+
+// @mixin sub-heading-small {
+//   @include text-style(18px, $font-weight-medium);
+// }
+
+// @mixin sub-heading-extra-small {
+//   @include text-style(16px, $font-weight-medium);
+// }
+
+// // Paragraphs
+// @mixin paragraph {
+//   @include text-style(16px, $font-weight-regular);
+// }
+
+// @mixin paragraph-small {
+//   @include text-style(14px, $font-weight-regular);
+// }
+
+// @mixin paragraph-light {
+//   @include text-style(16px, $font-weight-light);
+// }
+
+// // alternative
+// @mixin black-text {
+//   @include text-style(14px, $font-weight-black);
+// }
+
+
+// // Utility classes
+// @mixin text-bold {
+//   font-weight: $font-weight-bold;
+// }
+
+// @mixin text-semi-bold {
+//   font-weight: $font-weight-semi-bold;
+// }
+
+// @mixin text-regular {
+//   font-weight: $font-weight-regular;
+// }
+
+// @mixin text-light {
+//   font-weight: $font-weight-light;
+// }
+
+// @mixin text-large {
+//   font-size: 20px;
+// }
+
+// @mixin text-medium {
+//   font-size: 18px;
+// }
+
+// @mixin text-small {
+//   font-size: 14px;
+// }
+
+// @mixin text-uppercase {
+//   text-transform: uppercase;
+// }
+
+// @mixin text-center {
+//   text-align: center;
+// }
+
+// @mixin text-right {
+//   text-align: right;
+// }
+
+// @mixin text-left {
+//   text-align: left;
+// }
+
+

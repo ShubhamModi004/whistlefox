@@ -1,0 +1,103 @@
+@import "../../../styles/common.scss";
+
+.container {
+  display: flex;
+  background: $blueBg;
+
+  .inner_container {
+    @include content_layout;
+    padding: 5% 0;
+
+    @media screen and (max-width: $medium) {
+      padding: 5% 5%;
+    }
+    h2 {
+      @include header;
+      color: $primaryBlack;
+      margin-bottom: 3.5rem;
+    }
+
+    .services_container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+
+      @media screen and (max-width: $medium) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      .service {
+        height: 100%;
+        width: 100%;
+        position: relative;
+
+        .img_container {
+          position: relative;
+          height: 25rem;
+          width: 100%;
+        }
+
+        h3 {
+          @include subheader;
+          color: $accent;
+          margin: 12px 0; 
+        }
+        .black {
+          color: black !important;
+        }
+
+        ul {
+          list-style: none; // Remove the default list style
+          padding-left: 0;  // Remove default padding
+        
+          li {
+            position: relative;
+            padding-left: 20px; 
+            @include subtitleRegular;
+            color: $primaryBlack;
+            margin: 0.5rem 0;
+
+            &::before {
+              content: '';  
+              position: absolute;
+              left: 0;
+              top: 50%;
+              transform: translateY(-50%);
+              width: 10px; 
+              height: 10px; 
+              border-radius: 50%; 
+              border: 1px solid #8A8A8A;
+              background-color: transparent;
+            }
+          }
+        }
+
+        p {
+          @include subtitleRegular;
+          color: $primaryBlack;
+          padding-right: 2rem;
+        }
+      }
+    }
+
+    .features {
+      gap: 16px;
+      margin: 4rem 0;
+      @include align_center;
+
+      div {
+        width: 100%;
+        height: 1px;
+        background: black;
+      }
+
+      p {
+        @include hint;
+        color: $primaryBlack;
+        width: max-content;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+      }
+    }
+  }
+}
